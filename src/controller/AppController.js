@@ -49,7 +49,7 @@ module.exports = class AppController {
             const commandAndArg = this.getCommandAndArg(result)
             const command = commandAndArg.command
             const arg = commandAndArg.arg
-            if ((command == LEFT || command == RIGHT || command == MOVE) && !this.robot.isPositionPlaced()) {
+            if ((command == LEFT || command == RIGHT || command == MOVE || command == REPORT) && !this.robot.isPositionPlaced()) {
                 console.log("You have not placed the robot\n")
             } else {
                 switch (command) {
