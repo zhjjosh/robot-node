@@ -2,5 +2,8 @@
     "scripts": {
         "test": "jest",
         "start": "node index"
+    },
+    "devDependencies": {
+        "jest": "^26.0.1"
     }
 }
